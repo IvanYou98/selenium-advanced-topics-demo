@@ -1,4 +1,4 @@
-package scroll;
+package js_executor.scroll;
 
 import base.Base;
 import org.openqa.selenium.By;

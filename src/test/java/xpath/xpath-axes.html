@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>XPath Axes</title>
+    <style>
+        div {
+            background-color: initial;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div style="width: 30%; margin-left: auto; margin-right: auto">
+    <p>this is the Grandfather</p>
+    <div>
+        <p>this is the Father</p>
+        <div><p>this is sibling 0</p></div>
+        <div id="cur_node">
+            <p>this is current node</p>
+            <div><p>this is child 1</p>
+                <div>
+                    <p>this is grand child 1</p>
+                </div>
+            </div>
+            <div><p>this is child 2</p></div>
+        </div>
+        <div><p>this is sibling 1</p></div>
+        <div><p>this is sibling 2</p></div>
+    </div>
+    <div>
+        <p>this is cousin 1</p>
+        <p>this is cousin 2</p>
+    </div>
+    <div>
+        <p>this is uncle 1</p>
+    </div>
+</div>
+<script>
+    const pList = document.querySelectorAll("p");
+    pList.forEach(p => {
+        p.addEventListener('click', function (event) {
+            event.target.style.backgroundColor = 'orange'
+        })
+    })
+</script>
 </body>
 </html>

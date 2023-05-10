@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>XPath Functions</title>
 </head>
 <body>
-$END$
+  <div>
+    <p onclick="clickHandler('text() method')">Demo for text()</p>
+    <p onclick="clickHandler('contains() method')">Demo for contains()</p>
+    <p onclick="clickHandler('starts-with() method')">starts-with() demo</p>
+    <p onclick="clickHandler('position() method')">Demo for position()</p>
+    <p onclick="clickHandler('normalise-space() method')">   Demo  for    normalise-space() </p>
+    <p onclick="clickHandler('last() method')">Demo for last()</p>
+  </div>
+
+<script>
+    function clickHandler(msg) {
+        alert(msg + " is clicked!");
+    }
+</script>
 </body>
 </html>

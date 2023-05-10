@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Enable Demo</title>
 </head>
 <body>
-$END$
+  <div style="width: 50%; margin: 100px auto auto;">
+    <button id="btn" onclick="clickHandler()" disabled>You cannot Click me!</button>
+  </div>
+  <script>
+    function clickHandler() {
+      alert("Clicked!")
+    }
+  </script>
 </body>
 </html>

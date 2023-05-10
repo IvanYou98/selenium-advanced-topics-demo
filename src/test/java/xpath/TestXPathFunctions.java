@@ -3,11 +3,13 @@ package xpath;
 import base.Base;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class XPathFunctions extends Base {
+public class TestXPathFunctions extends Base {
 
     @BeforeClass
     @Override
@@ -50,6 +52,7 @@ public class XPathFunctions extends Base {
 
     @Test
     public void testLastMethod() {
+        
         driver.findElement(By.xpath("//p[last()]")).click();
     }
 
